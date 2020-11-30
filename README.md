@@ -3,9 +3,8 @@
 ## Table of Contents
 * Description
 * User Story
-* Demo Link
+* Demo Links
 * Technology
-* Sources
 * Additional Questions   
 
 ## Description 
@@ -19,10 +18,12 @@ A React-based Google Books Search app with React components, work with helper/ut
 
 ## Demo Links 
 [Github](https://github.com/sck916/Google-Books) 
-[Heroku](https://floating-mountain-06663.herokuapp.com/)
+[Heroku]()
 
 ## Technology
 HTML, CSS, Javascript, React, Node, Express, MongoDB
 
-## Sources
-Class activities, tutor session.
+### Additional Questions
+If you have any questions about the project, please reach out to me through
+[GitHub](https://github.com/sck916) or [LinkedIn](https://www.linkedin.com/in/steve-kavuu-8a96611b7/)
+
