@@ -41,10 +41,10 @@ app.use(function (req, res, next) {
 });
 
 // If our node environment is production we will serve up our static assets from the build folder
-if (process.env.NODE_ENV === 'production') {
+//if (process.env.NODE_ENV === 'production') {
     // The react app is called 'client' and we are accessing the build folder that is initialized in the postbuild scripts.
     app.use(express.static('client/build'))
-};
+//};
 
 // API and View Routes
 
@@ -66,8 +66,6 @@ app.post("/savedbooks", function(req,res){
 
 app.get("/getAllBooks", function(req,res){
     console.log('we hit hte route!!!', req.body)
-
-    
 
     bookModel.find({}).then(function(data) {
         console.log('new dude we saved!!', data)

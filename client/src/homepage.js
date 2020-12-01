@@ -1,5 +1,11 @@
 import React,{useState} from 'react';
 import Axios from 'axios';
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link
+  } from "react-router-dom";
 //AIzaSyCqDOGjCukY8qUJ8vMwUD9dQXWAgw7ld8Y
 
 //https://www.googleapis.com/books/v1/volumes?q=flowers+inauthor:keyes&key=yourAPIKey
@@ -42,6 +48,7 @@ const [state, setstate] = useState({
 console.log("this is our state",state);
   return (
     <div className="App">
+        <Link to="/Favs">GO TO FAVS!</Link>
       <h1>Y0</h1>
       <input onChange={handleTyping} type="text"></input>
       <button onClick={handleClick} class>Search for book!!</button>
