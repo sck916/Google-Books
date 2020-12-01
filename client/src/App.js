@@ -1,11 +1,24 @@
-import React from 'react';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 
-import './App.css';
+import FavsPage from './Favspage.js';
+import Homepage from './homepage.js'
 
 function App() {
   return (
     <div className="App">
-      <h1>Y0</h1>
+      <Router>
+          <Switch>
+            <Route exact path="/" component={Homepage} />
+            <Route exact path="/Favs" component={FavsPage } />
+          
+          </Switch>
+
+      </Router>
     </div>
   );
 }

@@ -49,18 +49,33 @@ if (process.env.NODE_ENV === 'production') {
 // API and View Routes
 
 app.post("/savedbooks", function(req,res){
+    console.log('we hit hte route!!!', req.body)
 
     var newBookToSave = {
         title: req.body.volumeInfo.title,
         authors: req.body.volumeInfo.authors,
         description: req.body.searchInfo.textSnippet
     }
+    console.log('new book to save looks good!!', newBookToSave)
 
     bookModel.create(newBookToSave).then(function(data) {
         console.log('new dude we saved!!', data)
     })
 
 })
+
+app.get("/getAllBooks", function(req,res){
+    console.log('we hit hte route!!!', req.body)
+
+    
+
+    bookModel.find({}).then(function(data) {
+        console.log('new dude we saved!!', data)
+        res.json(data)
+    })
+
+})
+
 
 // Start the server
 app.listen(PORT, () => {
