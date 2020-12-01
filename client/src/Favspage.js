@@ -29,7 +29,7 @@ console.log('this is our state!!', state)
     return (
       <div className="App">
           <Link to="/">GO TO HOME!</Link>
-      <h1>Favs Page coming soon</h1>
+      <h1>These are your Favorites</h1>
 
 
       {state.results.map((singleBook)=>{

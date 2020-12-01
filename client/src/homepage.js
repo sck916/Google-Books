@@ -49,7 +49,7 @@ console.log("this is our state",state);
   return (
     <div className="App">
         <Link to="/Favs">GO TO FAVS!</Link>
-      <h1>Y0</h1>
+      <h1>Search For a Book</h1>
       <input onChange={handleTyping} type="text"></input>
       <button onClick={handleClick} class>Search for book!!</button>
 
